@@ -51,9 +51,16 @@ module bottomHull() {
             for (a = [0:6]) {
               wheelPin(a, 7 , -43.5);
             }
-
         }
     }
+}
+
+module topWheel() {
+  rotate([0, 90, 0]) {
+    cylinder(h = 10, r = pinWidth, center = true, $fn = detail);
+    translate([0,0,3]) cylinder(h = 3, r = pinWidth + 1, center = true, $fn = detail);
+  }
+
 }
 
 module topHull() {
@@ -90,6 +97,9 @@ module topHull() {
       // vnitri misto
       translate([0,10,-4]) {
           cube(size = [38,115,11], center=true);
+      }
+      for (a = [0:5]) {
+        wheelPin(a, -4 , -33.5);
       }
     }
 
@@ -130,4 +140,5 @@ module hull() {
   leftHullSide();
   rightHullSide();
   details();
+   translate([22,10,12]) topWheel();
 }

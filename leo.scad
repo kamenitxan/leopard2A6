@@ -34,7 +34,7 @@ translate([-18.5, 30, -5]) {
 rotate([90,0,0]) {
     import("/home/tomaspavel/Dokumenty/3dprint/hotove/1-100_leopard_2-2a5-2a6/1-100 leopard 2-2.STL");
 }}}
-#scale([2,2,2]) {
+*scale([2,2,2]) {
 translate([-15.8, 20.5, 6.0]) {
 rotate([90,0,0]) {
     import("/home/tomaspavel/Dokumenty/3dprint/hotove/1-100_leopard_2-2a5-2a6/1-100 leopard 2A6 turret-2.STL");

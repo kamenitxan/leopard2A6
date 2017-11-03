@@ -18,3 +18,15 @@ module engineGrill() {
   //horni kraj
   translate([0,0,height+0.5]) cube([width, 1, 0.5], center = true);
 }
+
+module sideSkirt1(i) {
+
+}
+
+module sideSkirt2(i) {
+
+}
+
+module sideSkirt3(i) {
+
+}
